@@ -6,6 +6,7 @@ CAUTION!! At the moment you MUST create the Documents, Pictures, Software folder
 
 To use this yourself just change the value of src_dir to the directory you would like to sort and remember to create the sorting folders listed above.
 
-TODO:   -Create a check to see if sorting folders already exist and create them if they do not.
-		-Add more file types 
+#TODO   
+-Create a check to see if sorting folders already exist and create them if they do not.
+-Add more file types 
 
