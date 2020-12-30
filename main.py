@@ -1,7 +1,8 @@
 import os
 import shutil
 
-src_dir = "C:/Users/tibia/Desktop/test"
+#Directories
+src_dir = "C:/Users/tibia/Desktop/test"  # Change src_dir to the directory you wish to sort
 doc_dir = src_dir + "/Documents"
 pic_dir = src_dir + "/Pictures"
 soft_dir = src_dir + "/Software"
@@ -40,15 +41,17 @@ action = {
     # Software extensions
     'exe': moveto(soft_dir),
     'iso': moveto(soft_dir),
-    'msi': moveto(soft_dir),
+    'MSI': moveto(soft_dir),
     # Compressed extensions
     'zip': moveto(comp_dir),
     'rar': moveto(comp_dir),
     # Video extensions
     'mp4': moveto(vid_dir),
     'mov': moveto(vid_dir),
+    'webm': moveto(vid_dir),
     'wmv': moveto(vid_dir),
     'flv': moveto(vid_dir),
+    'avi': moveto(vid_dir),
     # Music and audio extensions
     'mp3': moveto(mus_dir),
     'wav': moveto(mus_dir),
@@ -57,7 +60,7 @@ action = {
     'm4a': moveto(mus_dir),
 }
 
-#for filename in os.listdir(src_dir):
-#   ext = os.path.splitext(filename)[1][1:]
-#    if ext in action:
-#        action[ext](os.path.join(src_dir, filename))
+for filename in os.listdir(src_dir):
+    ext = os.path.splitext(filename)[1][1:]
+    if ext in action:
+        action[ext](os.path.join(src_dir, filename))
