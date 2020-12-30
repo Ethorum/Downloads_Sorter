@@ -1,13 +1,17 @@
 # Downloads_Sorter
-Simple python script to sort my downloaded files into specific folders based on their extension
+Simple python program to sort files into specific folders based on their extension
 
-CAUTION!! At the moment you MUST create the Documents, Pictures, Software folder manually. If you do not then the program will destroy your files and create a new file named after the folder you're missing.. The folders are case sensitive!
+This will check the directory you specify and then create folders to sort files into based on their extensions
 
+To use this change the value of `src_dir` to the directory you would like to sort.
+```python
+src_dir = "C:/Users/example/Desktop/test"
+```
 
-To use this yourself just change the value of src_dir to the directory you would like to sort and remember to create the sorting folders listed above.
+You can run this by running the following script in your CMD or Powershell while in the files directory:
+```
+python main.py
+```
 
-### TODO   
-- Create a check to see if sorting folders already exist and create them if they do not.
-- Add more file types
 
 
